@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: emotion_detection_app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app/static/uploads:/app/app/static/uploads
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=run.py
+    restart: unless-stopped

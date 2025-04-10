@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+
+# Docker
+.docker/
+
+# 项目特定
+app/static/uploads/*
+!app/static/uploads/.gitkeep
+instance/
+
+# 系统文件
+.DS_Store
+Thumbs.db
